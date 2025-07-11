@@ -1,0 +1,23 @@
+{
+  "name": "MaterialFlow",
+  "short_name": "MaterialFlow",
+  "description": "In/Out board for material orders.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E8F1F2",
+  "theme_color": "#7FB7BE",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer base {
+  :root {
+    --background: 192 25% 94%; /* Light, desaturated blue #E8F1F2 */
+    --foreground: 190 15% 25%; /* Dark, slightly desaturated blue for text */
+
+    --card: 192 25% 98%;
+    --card-foreground: 190 15% 25%;
+
+    --popover: 192 25% 98%;
+    --popover-foreground: 190 15% 25%;
+
+    --primary: 190 35% 62%; /* Soft blue #7FB7BE */
+    --primary-foreground: 190 35% 10%; /* Darker blue for text on primary */
+
+    --secondary: 190 20% 88%;
+    --secondary-foreground: 190 15% 25%;
+
+    --muted: 190 20% 90%;
+    --muted-foreground: 190 10% 45%;
+
+    --accent: 39 87% 59%; /* Orange #F2B33D */
+    --accent-foreground: 39 80% 5%; /* Dark brown/black for text on accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 190 20% 85%;
+    --input: 190 20% 90%;
+    --ring: 190 35% 62%; /* Ring color as primary */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors, can be kept or adjusted if sidebar is used later */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Keeping dark mode defaults, can be themed later if needed */
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 190 35% 62%; /* Soft blue #7FB7BE */
+    --primary-foreground: 190 35% 10%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 39 87% 59%; /* Orange #F2B33D */
+    --accent-foreground: 39 80% 5%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 190 35% 62%;
+     /* Sidebar specific colors for dark mode */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 190 35% 62%; /* Primary color for dark mode sidebar */
+    --sidebar-primary-foreground: 190 35% 10%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 190 35% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
